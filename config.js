@@ -1,0 +1,82 @@
+import chalk from 'chalk'
+import { fileURLToPath } from 'url'
+import { watchFile, unwatchFile } from 'fs'
+
+// Ini owner real no fek"
+global.owner = [
+  ['6282275937345'], // global owner 0
+  ['6281263843003'], // global owner 1
+  ['16146826211'], // global owner 2
+  ['994407279608', 'MaxxOsaka.', true] // global owner 3
+]
+
+//apikey
+global.rosekey = 'Rs-lojembot' //https://api.itsrose.life
+global.apilol = 'ayakaviki' //'BrunoSobrino_2' //['GataDios']
+global.itsrose = 'Rs-lojembot'
+global.rose = 'Rs-lojembot',
+global.xyro = 'UnlimitedXyroineeKey' // https://api.xyroinee.xyz free limit unlimited
+global.lann = 'WwtcTZWz' //isi apikey mu https://api.betabotz.org
+global.btc = 'jcNXPdiQ' // https://api.botcahx.live
+
+//nomor owenr dan bot
+global.nomorbot = '6281263843003'
+global.nomorown = '6282275937345'
+global.namebot = 'Maxx The Bot Whatsapp'
+global.nameown = 'ᴋᴏᴋᴏᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ.'
+global.email = 'pangeran.dwnta21@gmail.com' 
+global.fgig = '▢ Ikuti saya di Instagram \nhttps://www.instagram.com/kokopangeran_\n'
+/*============== Github Thanks To ==============*/
+global.namagithub = 'MendingTuru'
+//global.linkgithub = sgh
+/*============== Reaction ==============*/
+global.rwait = '⌛'
+global.done = '✅'
+
+global.mods = [] // Want some help?
+global.prems = [] // Premium user has unlimited limit
+global.APIs = {
+  can: 'https://pnggilajacn.my.id',
+  skizo: 'https://xzn.wtf'
+}
+global.APIKeys = {
+  'https://pnggilajacn.my.id': 'ItsukaChan',
+  'https://xzn.wtf': 'Rippanteq7'
+}
+
+global.thumbnailUrl = [
+  'https://telegra.ph/file/81260a8b9e8cff26d2b48.jpg', 'https://telegra.ph/file/ac4928f0824a2a0492737.jpg',
+  'https://telegra.ph/file/6359b013bc7e52c3b346f.jpg', 'https://telegra.ph/file/d43c89a5d2da72875ec05.jpg',
+  'https://telegra.ph/file/7d6c0e35f9c8f52715541.jpg', 'https://telegra.ph/file/ef4b742d47e6a9115e2ff.jpg',
+  'https://telegra.ph/file/55e5af5f33fbd57104187.jpg', 'https://telegra.ph/file/af236598456b95884bd15.jpg',
+  'https://telegra.ph/file/de92ed4a729887ffc974c.jpg', 'https://telegra.ph/file/00ce42a193b1dbbf907d4.jpg'
+]
+
+//====== Url Template Buttons ======//
+global.dtu = 'ᴅᴏɴᴀᴛᴇ'
+global.urlnya = "+62 859-3436-2661"
+//========== callButtons ==========//
+global.dtc = 'ᴄᴀʟʟ ᴏᴡɴᴇʀ'
+global.phn = '+62 859-3436-2661'
+
+// Sticker WM
+global.packname = `MaxxTheBot`
+global.author = `© NEW ERA 2023`
+
+// Random
+global.wm = `Powered By Maxx`
+global.doc = pickRandom(["application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/msword", "application/pdf"])
+global.ephemeral = '86400' // 86400 = 24jam, kalo ingin di hilangkan ganti '86400' jadi 'null' atau ''
+global.monitor = `ur2083365-d59b9c478c15fa7770ccb8f3` // Ambil di https://uptimerobot.com
+global.multiplier = 69 // The higher, The harder levelup
+
+let file = fileURLToPath(import.meta.url)
+watchFile(file, () => {
+  unwatchFile(file)
+  console.log(chalk.redBright("Update 'config.js'"))
+  import(`${file}?update=${Date.now()}`)
+})
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
